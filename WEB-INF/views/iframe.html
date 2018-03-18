@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="../../static/asserts/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/asserts/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="../../static/asserts/fbicons/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../static/asserts/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="../../static/asserts/plugins/layui/css/layui.css">
+</head>
+
+<label> enter a key: </label> <input type="text" id="name">
+<p>This is a test for iframe in layui</p>
+<button class="btn btn-success add">add</button>
+<button class="btn btn-success prompt">prompt</button>
+<button class="btn btn-success pass">pass value to the parent</button>
+<button class="btn btn-success close">close the frame</button>
+<div id="single-compare-box" style="padding: 10px;">
+
+</div>
+
+<body>
+
+<script src="../../static/asserts/jquery.min.js"></script>
+<script src="../../static/asserts/bootstrap.min.js"></script>
+<script src="../../static/asserts/js/scripts.js"></script>
+<script src="../../static/asserts/plugins/layui/layui.js"></script>
+
+<script>
+    layui.use('layer', function () {
+        // var layer = layui.layer;
+
+        var index = parent.layer.getFrameIndex(window.name);
+
+        $('.add').on('click', function(){
+            $('body').append('insert data insert datainsert data insert datainsert data insert data');
+            parent.layer.iframeAuto(index);
+        });
+
+        $('.prompt').on('click', function(){
+            parent.layer.msg('Hi, man', {shade: 0.3})
+        });
+        $('.pass').on('click', function(){
+            parent.$('.click-me-hide').text('I have been changed');
+            console.log("");
+            parent.layer.tips('Look here', '.click-me-hide', {time: 5000});
+            parent.layer.close(index);
+        });
+
+        $('.close').click(function(){
+            var val = $('#name').val();
+            if(val === ''){
+                parent.layer.msg('fill in');
+                return;
+            }
+            parent.layer.msg('you passed it to the parent [ ' +val + ' ]');
+            parent.layer.close(index);
+
+        });
+
+
+
+    });
+
+</script>
+</body>
+
+
+</html>

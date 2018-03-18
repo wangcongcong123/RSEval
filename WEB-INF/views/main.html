@@ -1,0 +1,2068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Bootstrap 3 Admin</title>
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../../static/asserts/plugins/layui/css/layui.css">
+    <link href="../../static/asserts/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../static/asserts/css/AdminLTE.min.css">
+    <!--<link rel="stylesheet" href="../../static/asserts/plugins/datatables/dataTables.bootstrap.css">-->
+    <link rel="stylesheet" href="../../static/asserts/fbicons/css/font-awesome.min.css">
+    <link href="../../static/asserts/css/styles.css" rel="stylesheet">
+
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+
+</head>
+<body style="background-color: #fefefe">
+<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Evaluating ACF RS</a>
+        </div>
+        <div class="navbar-collapse collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"><i class="fa fa-gears"></i>
+                        Settings <span class="caret"></span></a>
+
+                    <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Two</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <!-- /container -->
+</div>
+<!-- /Header -->
+
+<!-- Main -->
+<div class="container-fluid">
+
+
+
+
+    <div class="row">
+        <div class="col-sm-2">
+            <!-- Left column -->
+            <a href="#"><strong><i class="fa fa-wrench"></i> Control Panel</strong></a>
+
+            <hr>
+
+
+            <ul class="nav nav-stacked">
+                <li class="nav-header"><a data-toggle="collapse" data-target="#menu1"> Navigation <i
+                        class="fa fa-chevron-down nav-header-label"></i></a>
+
+                    <ul class="nav nav-stacked collapse in" id="menu1">
+
+                        <li class="active">
+                            <a href="#testcase1">Test Case 1</a>
+                        </li>
+
+                        <li><a href="#testcase2">Test Case 2</a>
+                        </li>
+
+                        <li><a href="">Test Case 3</a>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-header"><a data-toggle="collapse" data-target="#menu2"> Test Selector <i
+                        class="fa fa-chevron-right nav-header-label"></i></a>
+
+                    <ul class="nav nav-stacked collapse" id="menu2">
+                        <li>
+                            <a>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Test Case 1
+                                    </label>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Test Case 2
+                                    </label>
+                                </div>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Test Case 3
+                                    </label>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-header"><a data-toggle="collapse" data-target="#menu3">Settings <i
+                        class="fa fa-chevron-right nav-header-label"></i></a>
+                    <ul class="nav nav-stacked collapse" id="menu3">
+
+                        <li><a href=""><i class="fa fa-eye"></i> Compare &amp; Contrast</a></li>
+                        <li><a href="#"><i class="fa fa-save"></i> Save</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-header">
+                    <a data-toggle="collapse" data-target="#menu4"> Other <i
+                            class="fa fa-chevron-right nav-header-label"></i></a>
+                    <ul class="nav nav-stacked collapse" id="menu4">
+                        <li><a href=""><i class="fa fa-circle-o"></i> reserved 1</a></li>
+                        <li><a href=""><i class="fa fa-circle-o"></i> reserved 2</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <hr>
+
+            <a href="#"><strong><i class="fa fa-link"></i> Resources</strong></a>
+
+            <hr>
+
+            <!--<ul class="nav nav-pills nav-stacked">-->
+            <!--<li class="nav-header"></li>-->
+            <!--<li><a href="#"><i class="fa fa-list"></i> Layouts &amp; Templates</a></li>-->
+            <!--<li><a href="#"><i class="fa fa-briefcase"></i> Toolbox</a></li>-->
+            <!--<li><a href="#"><i class="fa fa-link"></i> Widgets</a></li>-->
+            <!--<li><a href="#"><i class="fa fa-list-alt"></i> Reports</a></li>-->
+            <!--<li><a href="#"><i class="fa fa-book"></i> Pages</a></li>-->
+            <!--<li><a href="#"><i class="fa fa-star"></i> Social Media</a></li>-->
+            <!--</ul>-->
+
+            <!--<hr>-->
+
+            <!--<ul class="nav nav-stacked">-->
+            <!--<li class="active"><a href="http://bootply.com" title="The Bootstrap Playground"-->
+            <!--target="ext">Playground</a></li>-->
+            <!--<li><a href="/tagged/bootstrap-3">Bootstrap 3</a></li>-->
+            <!--<li><a href="/61518" title="Bootstrap 3 Panel">Panels</a></li>-->
+            <!--<li><a href="/61521" title="Bootstrap 3 Icons">Glyphicons</a></li>-->
+            <!--<li><a href="/62603">Layout</a></li>-->
+            <!--</ul>-->
+
+            <!--<hr>-->
+
+            <!--<a href="#"><strong><i class="fa fa-list"></i> More Templates</strong></a>-->
+
+            <!--<hr>-->
+
+            <!--<ul class="nav nav-stacked">-->
+            <!--<li class="active"><a rel="nofollow" href="http://goo.gl/pQoXEh" target="ext">Premium Themes</a></li>-->
+            <!--<li><a rel="nofollow" href="https://wrapbootstrap.com/?ref=bootply">Wrap Bootstrap</a></li>-->
+            <!--<li><a rel="nofollow" href="http://bootstrapzero.com">BootstrapZero</a></li>-->
+            <!--</ul>-->
+        </div>
+        <!-- /col-3 -->
+        <div class="col-sm-10">
+
+            <!-- column 2 -->
+            <ul class="list-inline pull-right">
+
+                <li>
+                    <a title="Add a test case" class="btn btn-primary btn-sm" data-toggle="modal"
+                       href="#addWidgetModal">
+                        <i class="fa fa-plus"></i> Add</a>
+
+                    <a class="btn btn-success btn-sm" id="import">
+                        <i class="fa fa-sign-in"></i> Import</a>
+                    <input type="file" style="display: none" name="importfile">
+                </li>
+
+            </ul>
+
+            <br>
+
+            <a href="#"><strong><i class="fa fa-tags"></i>Testbed</strong></a>
+
+            <hr>
+
+            <div id="topline"></div>
+
+
+            <!--test case html panel-->
+            <div class="box  box-success">
+
+                <div class="box-header with-border">
+
+                    <h3 class="box-title testcase-title">default</h3>
+
+
+                    <div class="box-tools pull-right">
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown"
+                                    aria-expanded="true">
+                                <i class="fa fa-wrench"></i></button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#"><i class="fa fa-eye"></i> Comtrast &amp; Compare</a></li>
+                                <li><a href="#"><i class="fa fa-repeat"></i> Reset</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#"><i class="fa fa-save"></i> Sava</a></li>
+                            </ul>
+                        </div>
+
+
+                        <!--<i class="fa fa-refresh fa-spin"></i>-->
+                        <button type="button" class="btn btn-box-tool collapseBtn" data-toggle="tooltip"
+                                title="" data-original-title="Collapse">
+                            <i class="fa fa-minus"></i></button>
+
+
+                        <button type="button" class="btn btn-box-tool removeBtn" data-toggle="tooltip"
+                                title="" data-original-title="Remove">
+                            <i class="fa fa-times"></i></button>
+                    </div>
+
+                </div>
+
+                <div class="box-body" style="">
+                    <!--configure row-->
+                    <div class="row">
+                        <div class="col-md-12 configure-panel">
+                            <!--Choose Algorithm and Example file input-->
+                            <div class="box no-header no-border">
+
+                                <div class="box-body">
+                                    <div class="form-group">
+                                        <label>Choose Algorithm</label>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="algmethod" class="algmethod1"
+                                                       value="User-based" ng-model="algmethod">
+                                                User-based ACF
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="algmethod" class="algmethod2"
+                                                       value="Item-based" ng-model="algmethod">
+                                                Item-based ACF
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="algmethod" class="algmethod3"
+                                                       value="Matrix Factorisation" ng-model="algmethod">
+                                                Matrix factorisation ACF
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <label>Algorithm selected:</label>
+                                    <label style="color: tomato" class="algmethod"></label>
+
+                                    <br>
+
+                                    <div class="form-group">
+                                        <label>Default Dataset: </label>
+                                        <a href="../../data/filmtrust/rating/ratings_1.txt">ratings_1 </a>
+                                        <a href="../../data/filmtrust/rating/ratings_2.txt">ratings_2 </a>
+                                        <a href="../../data/filmtrust/rating/ratings_3.txt">ratings_3 </a>
+                                        <a href="../../data/filmtrust/rating/ratings_0.txt">ratings_4 </a>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Example file input (unavailable so far)</label>
+                                        <input type="file" disabled class="form-control-file exampleFormControlFile1">
+                                    </div>
+
+
+                                    <div class="form-group row">
+
+                                        <div class="col-md-5 col-md-offset-1">
+
+                                            <button class="btn btn-block btn-default recommend">Recommend <i
+                                                    class="fa fa-chevron-right"></i>
+                                            </button>
+
+                                        </div>
+
+                                        <div class="col-md-5">
+
+                                            <button class="btn btn-block btn-default evaluate">Evaluate <i
+                                                    class="fa fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                        <div class="col-md-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--running environment row (recommendation and evaluation)-->
+                    <div class="row">
+                        <!--recommendation panel panel-->
+                        <div style="display: none" class="col-md-6 recommender-panel">
+                            <!--Choose a user-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 style="display: inline">Choose a user</h4>
+                                    <div class="form-group pull-right form-group-sm">
+                                        <input type="text" class="form-control" placeholder="filter">
+                                    </div>
+                                </div>
+
+
+                                <div class="panel-body">
+                                    <div class="table-responsive file-messages"
+                                         style="overflow-x: auto; overflow-y: auto; height: 200px; width: 100%;">
+                                        <table class="table table-hover table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>User ID</th>
+                                            </tr>
+                                            </thead>
+
+                                            <tbody>
+                                            <tr>
+                                                <td class="user-id">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="user-id">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="user-id">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="user-id">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="user-id">1</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /.table -->
+                                </div>
+                            </div>
+                            <hr>
+                            <!--Similarity Computation-->
+                            <div class="control-group">
+                                <label>Similarity Computation</label>
+                                <div class="controls">
+                                    <select class="form-control">
+                                        <option>Mean Squared Difference</option>
+                                        <option>Pearson Correlation</option>
+                                        <option>Cosine Similarity</option>
+                                        <option>Significance Weights</option>
+                                        <option selected>Default Voting</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr>
+                            <!--Neighbourhood Formation-->
+                            <div class="control-group">
+                                <label>Neighbourhood Formation</label>
+
+                                <div class="controls">
+                                    <br>
+
+                                    <div class="form-group form-group-sm row">
+                                        <label for="k" class="col-sm-4 col-form-label">k of kNN</label>
+                                        <div class="col-sm-8">
+                                            <input type="number" class="form-control" id="k"
+                                                   placeholder="enter the number of K">
+                                        </div>
+                                        <!--<div class="col-sm-4">&nbsp;</div>-->
+                                    </div>
+
+                                    <br>
+
+                                    <div class="form-group form-group-sm row">
+                                        <label for="l" class="col-sm-4 col-form-label">Threshold L</label>
+                                        <div class="col-sm-8">
+                                            <input class="form-control" id="l" type="text"
+                                                   placeholder="enter L of the Threshold">
+                                        </div>
+                                        <div class="col-sm-4">&nbsp;</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <hr>
+                            <!--Predicting or Top-N ?-->
+                            <div class="control-group">
+                                <label>Predicting or Top-N ?</label>
+                                <br>
+
+                                <div class="row">
+                                    <div class="col-xs-2">
+                                    </div>
+
+                                    <div class="col-xs-4">
+                                        <input type="checkbox">
+                                        Top N
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <input type="checkbox">
+                                        Prediction
+                                    </div>
+
+                                    <div class="col-xs-2">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <!--if prediction, Choose a Item-->
+                            <div class="panel panel-default">
+
+                                <div class="panel-heading">
+                                    <h4 style="display: inline">If prediction, choose an Item</h4>
+                                    <div class="form-group pull-right form-group-sm">
+                                        <input type="text" class="form-control" placeholder="filter">
+                                    </div>
+                                </div>
+
+                                <div class="panel-body">
+                                    <div class="table-responsive file-messages"
+                                         style="overflow-x: auto; overflow-y: auto; height: 200px; width: 100%;">
+                                        <table class="table table-hover table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th>Item ID</th>
+                                            </tr>
+                                            </thead>
+
+                                            <tbody>
+                                            <tr>
+                                                <td class="user-id">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="user-id">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="user-id">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="user-id">1</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="user-id">1</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /.table -->
+                                </div>
+
+                            </div>
+                            <hr>
+
+                            <!--If Top-N-->
+                            <div class="control-group">
+                                <label>If Top-N: </label>
+                                <br>
+                                <div class="row">
+
+                                    <div class="col-xs-6">
+                                        N<br>
+                                        <input type="number" class="form-control">
+                                    </div>
+
+                                    <div class="col-xs-6">
+                                        Ranking method
+                                        <select class="form-control">
+                                            <option selected>Predicting Rating (PR)</option>
+                                            <option>Item-mean across neighbors</option>
+                                            <option>Frequent Item-mean across neighbors</option>
+                                            <option>Customised Method</option>
+                                        </select>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <hr>
+
+                            <!--start button-->
+                            <div class="control-group">
+                                <br>
+                                <button type="button" class="btn btn-block btn-success btn start-recommend">Start
+                                </button>
+                            </div>
+                            <hr>
+
+                            <div class="row text-center wait-label" style="display: none">
+                                <i class="fa fa-refresh fa-spin fa-5x"> </i></div>
+                            <br>
+
+                            <!--wait label-->
+                            <!--<div class="row text-center"> <i class="fa fa-refresh fa-spin fa-5x"> </i></div>-->
+
+                            <!--summary of reuslt-->
+                            <div style="display: none" class="box box-solid box-primary recommend-result">
+
+                                <div class="box-header with-border">
+                                    <i class="fa fa-text-height"></i>
+                                    <h3 class="box-title">Result summary</h3>
+                                </div>
+
+                                <!-- /.box-header -->
+                                <div class="box-body">
+
+                                    <p class="lead">For predicting <span class="text-green">item 2</span> of <span
+                                            class="text-green">user 2</span></p>
+
+                                    <p class="text-yellow">Predicted Rating:4.5</p>
+
+                                    <p class="text-red">Desc: User 2 likes item 2 very likely</p>
+
+                                    <br>
+                                    <p class="lead">Recommeding top-N items for <span class="text-green">user 2</span>
+                                    </p>
+
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+
+                                            <thead>
+                                            <tr>
+                                                <th>Ranking</th>
+                                                <th>Item</th>
+                                                <th>Score</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            <tr>
+                                                <td># 1</td>
+                                                <td>12</td>
+                                                <td>4.23</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td># 2</td>
+                                                <td>2</td>
+                                                <td>4.03</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td># 3</td>
+                                                <td>122</td>
+                                                <td>3.23</td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+
+                                <!-- /.box-body -->
+                            </div>
+
+                        </div>
+                        <!--/ evaluation panel-->
+                        <div style="display: none" class="col-md-6 evaluation-panel">
+
+                            <!--Choose Evaluation methodology-->
+
+
+                            <div class="control-group evalmethod">
+                                <label>Choose Evaluation methodology</label>
+                                <select class="form-control">
+                                    <option name="evalmethod">Repeated Random Sub-Sampling</option>
+                                    <option selected name="evalmethod">K-Fold Cross-Validation</option>
+                                    <option name="evalmethod">Leave-one-out</option>
+                                    <option name="evalmethod">Customised Methodology</option>
+                                </select>
+                            </div>
+
+
+                            <hr>
+
+                            <!--If K-fold Cross-Validation-->
+                            <div class="control-group">
+
+
+                                <label>If K-fold Cross-Validation</label>
+
+                                <div class="controls">
+                                    <br>
+
+                                    <div class="form-group form-group-sm row">
+                                        <div class="col-sm-2"></div>
+                                        <div class="col-sm-2 col-form-label">k:</div>
+                                        <div class="col-sm-6">
+                                            <input type="number" class="form-control"
+                                                   placeholder="enter the number of K">
+                                        </div>
+                                        <div class="col-sm-2"></div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr>
+
+                            <!--evaluation button-->
+                            <div class="control-group">
+                                <br>
+                                <button type="button" class="btn btn-block btn-info btn start-evaluation">Evaluate
+                                </button>
+                            </div>
+                            <hr>
+
+                            <div class="row text-center wait-label" style="display: none">
+                                <i class="fa fa-refresh fa-spin fa-5x"> </i></div>
+                            <br>
+                            <!--wait label-->
+                            <!--<div class="row text-center">
+                             <i class="fa fa-refresh fa-spin fa-5x"> </i></div>-->
+                            <div style="display: none" class="panel panel-default evaluation-result">
+
+                                <div class="panel-heading">
+                                    <label>Evaluation Reports</label>
+
+                                    <div class="input-group input-group-sm pull-right">
+                                        <button type="button" class="btn btn-box-tool dropdown-toggle"
+                                                data-toggle="dropdown"
+                                                aria-expanded="true">
+                                            <i class="fa fa-wrench"></i></button>
+
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#"><i class="fa fa-save"></i> Export</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+
+                                <div class="panel-body">
+
+                                    <!--Prediction Accuracy metrics-->
+                                    <div class="box no-border">
+
+                                        <div class="box-header">
+                                            <h3 class="box-title">Prediction Accuracy metrics</h3>
+                                            <div class="box-tools">
+                                                <div class="input-group input-group-sm pull-right">
+                                                    <button type="button" class="btn btn-box-tool dropdown-toggle"
+                                                            data-toggle="dropdown"
+                                                            aria-expanded="true">
+                                                        <i class="fa fa-wrench"></i></button>
+
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#"><i class="fa fa-save"></i> Sava</a></li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- /.box-header -->
+                                        <div class="box-body table-responsive no-padding">
+                                            <table class="table table-hover">
+
+                                                <thead>
+                                                <tr>
+                                                    <th>Matrics</th>
+                                                    <th>Score</th>
+                                                    <th>More Options</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+
+                                                <tr>
+                                                    <td><input type="checkbox"> Accuracy <a
+                                                            class="fa fa-question-circle-o"></a></td>
+                                                    <td>84.5%</td>
+                                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-trash-o" data-toggle="tooltip"
+                                                            data-placement="top" title="delete"></a>&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-search" data-toggle="tooltip"
+                                                            data-placement="top" title="visualise"></a></td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox"> MAE <a
+                                                            class="fa fa-question-circle-o"></a></td>
+                                                    <td>23.2</td>
+                                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-trash-o" data-toggle="tooltip"
+                                                            data-placement="top" title="delete"></a>&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-search" data-toggle="tooltip"
+                                                            data-placement="top" title="visualise"></a></td>
+
+                                                </tr>
+
+                                                </tbody>
+
+                                                <tfoot>
+
+                                                <tr>
+
+                                                    <th colspan="2">
+                                                        <select class="form-control">
+                                                            <option selected>MSE</option>
+                                                            <option>RMSE</option>
+                                                        </select>
+                                                    </th>
+
+                                                    <th>
+                                                        <a class="btn btn-add" data-toggle="tooltip"
+                                                           data-placement="top" title="add a metric">
+                                                            <i class="fa fa-plus-square-o fa-2x"></i>
+                                                        </a>
+                                                    </th>
+                                                </tr>
+                                                </tr>
+
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <!-- /.box-body -->
+                                    </div>
+
+                                    <!--Decison-support Metrics-->
+                                    <div class="box no-border">
+
+                                        <div class="box-header">
+                                            <h3 class="box-title">Decison-support Metrics</h3>
+                                            <div class="box-tools">
+                                                <div class="input-group input-group-sm" style="width: 150px;">
+                                                    <button type="button" class="btn btn-box-tool dropdown-toggle"
+                                                            data-toggle="dropdown"
+                                                            aria-expanded="true">
+                                                        <i class="fa fa-wrench"></i></button>
+
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#"><i class="fa fa-save"></i> Sava</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- /.box-header -->
+                                        <div class="box-body table-responsive no-padding">
+                                            <table class="table table-hover">
+
+                                                <thead>
+                                                <tr>
+                                                    <th>Matrics</th>
+                                                    <th>Score</th>
+                                                    <th>More Options</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+
+                                                <tr>
+                                                    <td><input type="checkbox"> Precison <a
+                                                            class="fa fa-question-circle-o"></a></td>
+                                                    <td>84.5%</td>
+                                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-trash-o"></a>&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-search"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox"> recall <a
+                                                            class="fa fa-question-circle-o"></a></td>
+                                                    <td>23.2</td>
+                                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-trash-o"></a>&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-search"></a></td>
+                                                </tr>
+
+                                                </tbody>
+
+                                                <tfoot>
+
+                                                <tr>
+
+                                                    <th colspan="2">
+                                                        <select class="form-control">
+                                                            <option selected>F-metrics</option>
+                                                            <option>ROC</option>
+                                                            <option>P@n & R@n</option>
+
+                                                        </select>
+                                                    </th>
+
+                                                    <th>
+                                                        <a class="btn btn-add" data-toggle="tooltip"
+                                                           data-placement="top" title="add a metric">
+                                                            <i class="fa fa-plus-square-o fa-2x"></i>
+                                                        </a>
+                                                    </th>
+                                                </tr>
+                                                </tr>
+
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <!-- /.box-body -->
+                                    </div>
+
+                                    <!--Rank-Aware Top-N Metrics-->
+                                    <div class="box no-border">
+
+                                        <div class="box-header">
+                                            <h3 class="box-title">Rank-Aware Top-N Metrics</h3>
+                                            <div class="box-tools">
+                                                <div class="input-group input-group-sm" style="width: 150px;">
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#"><i class="fa fa-save"></i> Sava</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- /.box-header -->
+                                        <div class="box-body table-responsive no-padding">
+                                            <table class="table table-hover">
+
+                                                <thead>
+                                                <tr>
+                                                    <th>Matrics</th>
+                                                    <th>Score</th>
+                                                    <th>More Options</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+
+                                                <tr>
+                                                    <td><input type="checkbox"> MMR <a
+                                                            class="fa fa-question-circle-o"></a></td>
+                                                    <td>84.5%</td>
+                                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-trash-o"></a>&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-search"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox"> AP <a
+                                                            class="fa fa-question-circle-o"></a></td>
+                                                    <td>23.2</td>
+                                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-trash-o"></a>&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-search"></a></td>
+                                                </tr>
+
+                                                </tbody>
+
+                                                <tfoot>
+
+                                                <tr>
+
+                                                    <th colspan="2">
+                                                        <select class="form-control">
+                                                            <option selected>Spearman Correlation</option>
+                                                            <option>MAP</option>
+                                                            <option>DCG</option>
+                                                            <option>nDCG</option>
+
+                                                        </select>
+                                                    </th>
+
+                                                    <th>
+                                                        <a class="btn btn-add" data-toggle="tooltip"
+                                                           data-placement="top" title="add a metric">
+                                                            <i class="fa fa-plus-square-o fa-2x"></i>
+                                                        </a>
+                                                    </th>
+                                                </tr>
+                                                </tr>
+
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <!-- /.box-body -->
+                                    </div>
+
+                                    <!--beyond accuracy metrics-->
+                                    <div class="box no-border">
+
+                                        <div class="box-header">
+                                            <h3 class="box-title">Beyond accuracy metrics</h3>
+                                            <div class="box-tools">
+                                                <div class="input-group input-group-sm" style="width: 150px;">
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a href="#"><i class="fa fa-save"></i> Sava</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- /.box-header -->
+                                        <div class="box-body table-responsive no-padding">
+                                            <table class="table table-hover">
+
+                                                <thead>
+                                                <tr>
+                                                    <th>Matrics</th>
+                                                    <th>Score</th>
+                                                    <th>More Options</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+
+                                                <tr>
+                                                    <td><input type="checkbox"> Coverage <a
+                                                            class="fa fa-question-circle-o"></a></td>
+                                                    <td>84.5%</td>
+                                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-trash-o"></a>&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-search"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox"> Serendipity <a
+                                                            class="fa fa-question-circle-o"></a></td>
+                                                    <td>23.2</td>
+                                                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-trash-o"></a>&nbsp;&nbsp;&nbsp;<a
+                                                            class="fa fa-search"></a></td>
+                                                </tr>
+
+                                                </tbody>
+
+                                                <tfoot>
+
+                                                <tr>
+
+                                                    <th colspan="2">
+                                                        <select class="form-control">
+                                                            <option selected>Novelty</option>
+                                                            <option>Diversity</option>
+                                                            <option>Relevance</option>
+                                                        </select>
+                                                    </th>
+                                                    <th>
+                                                        <a class="btn btn-add" data-toggle="tooltip"
+                                                           data-placement="top" title="add a metric">
+                                                            <i class="fa fa-plus-square-o fa-2x"></i>
+                                                        </a>
+                                                    </th>
+                                                </tr>
+                                                </tr>
+
+                                                </tfoot>
+                                            </table>
+                                        </div>
+                                        <!-- /.box-body -->
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-md-8">
+
+                                            <p>
+                                                <span class="label label-danger">Precison</span>
+                                                <span class="label label-success">MAE</span>
+                                                <span class="label label-info">MMR</span>
+                                                <span class="label label-warning">Coverage</span>
+                                                <span class="label label-primary">Spearman Correlation</span>
+                                            </p>
+
+                                        </div>
+
+                                        <div class="col-ml-4"><a class="btn btn-default fa fa-area-chart">
+                                            Visulatise</a></div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <!--/panel-body-->
+                            </div>
+
+                        </div>
+                        <!--/col-span-6-->
+                    </div>
+
+                </div>
+
+                <div class="box-footer" style="">
+                    <div data-toggle="tooltip" data-placement="top" title="New a evaluation test case">
+
+                        <a class="btn btn-default btn-block btn-sm" data-toggle="modal"
+                           href="#addWidgetModal">
+                            <i class="fa fa-plus"></i> Add
+                        </a>
+
+                    </div>
+                </div>
+                <!-- /.box-footer-->
+            </div>
+
+
+            <!--/row-->
+
+
+        </div>
+        <!--/col-span-9-->
+    </div>
+</div>
+<!-- /Main -->
+
+<div id="testcaseboxlast"></div>
+
+
+<!--test case html panel-->
+
+<div style="display: none" class="box  box-success">
+
+    <div class="box-header with-border">
+
+        <h3 class="box-title testcase-title">default</h3>
+
+
+        <div class="box-tools pull-right">
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown"
+                        aria-expanded="true">
+                    <i class="fa fa-wrench"></i></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"><i class="fa fa-eye"></i> Comtrast &amp; Compare</a></li>
+                    <li><a href="#"><i class="fa fa-repeat"></i> Reset</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="fa fa-save"></i> Sava</a></li>
+                </ul>
+            </div>
+
+
+            <!--<i class="fa fa-refresh fa-spin"></i>-->
+            <button type="button" class="btn btn-box-tool collapseBtn" data-toggle="tooltip"
+                    title="" data-original-title="Collapse">
+                <i class="fa fa-minus"></i></button>
+
+
+            <button type="button" class="btn btn-box-tool removeBtn" data-toggle="tooltip"
+                    title="" data-original-title="Remove">
+                <i class="fa fa-times"></i></button>
+        </div>
+
+    </div>
+
+    <div class="box-body" style="">
+        <!--configure row-->
+        <div class="row">
+            <div class="col-md-12 configure-panel">
+                <!--Choose Algorithm and Example file input-->
+                <div class="box no-header no-border">
+
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label>Choose Algorithm</label>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="algmethod" class="algmethod1"
+                                           value="User-based" ng-model="algmethod">
+                                    User-based ACF
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="algmethod" class="algmethod2"
+                                           value="Item-based" ng-model="algmethod">
+                                    Item-based ACF
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="algmethod" class="algmethod3"
+                                           value="Matrix Factorisation" ng-model="algmethod">
+                                    Matrix factorisation ACF
+                                </label>
+                            </div>
+                        </div>
+
+                        <label>Algorithm selected:</label>
+
+                        <label style="color: tomato" class="algmethod"></label>
+
+                        <br>
+
+                        <div class="form-group">
+                            <label>Default Dataset: </label>
+                            <a href="../../data/filmtrust/rating/ratings_1.txt">ratings_1 </a>
+                            <a href="../../data/filmtrust/rating/ratings_2.txt">ratings_2 </a>
+                            <a href="../../data/filmtrust/rating/ratings_3.txt">ratings_3 </a>
+                            <a href="../../data/filmtrust/rating/ratings_0.txt">ratings_4 </a>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Example file input (unavailable so far)</label>
+                            <input type="file" disabled class="form-control-file exampleFormControlFile1">
+                        </div>
+
+
+                        <div class="form-group row">
+
+                            <div class="col-md-5 col-md-offset-1">
+
+                                <button class="btn btn-block btn-default recommend">Recommend <i
+                                        class="fa fa-chevron-right"></i>
+                                </button>
+
+                            </div>
+
+                            <div class="col-md-5">
+
+                                <button class="btn btn-block btn-default evaluate">Evaluate <i
+                                        class="fa fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--running environment row (recommendation and evaluation)-->
+        <div class="row">
+            <!--recommendation panel panel-->
+            <div style="display: none" class="col-md-6 recommender-panel">
+                <!--Choose a user-->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 style="display: inline">Choose a user</h4>
+                        <div class="form-group pull-right form-group-sm">
+                            <input type="text" class="form-control" placeholder="filter">
+                        </div>
+                    </div>
+
+
+                    <div class="panel-body">
+                        <div class="table-responsive file-messages"
+                             style="overflow-x: auto; overflow-y: auto; height: 200px; width: 100%;">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                <tr>
+                                    <th>User ID</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td class="user-id">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="user-id">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="user-id">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="user-id">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="user-id">1</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.table -->
+                    </div>
+                </div>
+                <hr>
+                <!--Similarity Computation-->
+                <div class="control-group">
+                    <label>Similarity Computation</label>
+                    <div class="controls">
+                        <select class="form-control">
+                            <option>Mean Squared Difference</option>
+                            <option>Pearson Correlation</option>
+                            <option>Cosine Similarity</option>
+                            <option>Significance Weights</option>
+                            <option selected>Default Voting</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <!--Neighbourhood Formation-->
+                <div class="control-group">
+                    <label>Neighbourhood Formation</label>
+
+                    <div class="controls">
+                        <br>
+
+                        <div class="form-group form-group-sm row">
+                            <label for="k" class="col-sm-4 col-form-label">k of kNN</label>
+                            <div class="col-sm-8">
+                                <input type="number" class="form-control" id="k"
+                                       placeholder="enter the number of K">
+                            </div>
+                            <!--<div class="col-sm-4">&nbsp;</div>-->
+                        </div>
+
+                        <br>
+
+                        <div class="form-group form-group-sm row">
+                            <label for="l" class="col-sm-4 col-form-label">Threshold L</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" id="l" type="text"
+                                       placeholder="enter L of the Threshold">
+                            </div>
+                            <div class="col-sm-4">&nbsp;</div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <hr>
+                <!--Predicting or Top-N ?-->
+                <div class="control-group">
+                    <label>Predicting or Top-N ?</label>
+                    <br>
+
+                    <div class="row">
+                        <div class="col-xs-2">
+                        </div>
+
+                        <div class="col-xs-4">
+                            <input type="checkbox">
+                            Top N
+                        </div>
+                        <div class="col-xs-4">
+                            <input type="checkbox">
+                            Prediction
+                        </div>
+
+                        <div class="col-xs-2">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!--if prediction, Choose a Item-->
+                <div class="panel panel-default">
+
+                    <div class="panel-heading">
+                        <h4 style="display: inline">If prediction, choose an Item</h4>
+                        <div class="form-group pull-right form-group-sm">
+                            <input type="text" class="form-control" placeholder="filter">
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="table-responsive file-messages"
+                             style="overflow-x: auto; overflow-y: auto; height: 200px; width: 100%;">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Item ID</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td class="user-id">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="user-id">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="user-id">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="user-id">1</td>
+                                </tr>
+                                <tr>
+                                    <td class="user-id">1</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.table -->
+                    </div>
+
+                </div>
+                <hr>
+
+                <!--If Top-N-->
+                <div class="control-group">
+                    <label>If Top-N: </label>
+                    <br>
+                    <div class="row">
+
+                        <div class="col-xs-6">
+                            N<br>
+                            <input type="number" class="form-control">
+                        </div>
+
+                        <div class="col-xs-6">
+                            Ranking method
+                            <select class="form-control">
+                                <option selected>Predicting Rating (PR)</option>
+                                <option>Item-mean across neighbors</option>
+                                <option>Frequent Item-mean across neighbors</option>
+                                <option>Customised Method</option>
+                            </select>
+
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+
+                <!--start button-->
+                <div class="control-group">
+                    <br>
+                    <button type="button" class="btn btn-block btn-success btn start-recommend">Start
+                    </button>
+                </div>
+                <hr>
+
+                <div class="row text-center wait-label" style="display: none">
+                    <i class="fa fa-refresh fa-spin fa-5x"> </i></div>
+                <br>
+
+                <!--wait label-->
+                <!--<div class="row text-center"> <i class="fa fa-refresh fa-spin fa-5x"> </i></div>-->
+
+                <!--summary of reuslt-->
+                <div style="display: none" class="box box-solid box-primary recommend-result">
+
+                    <div class="box-header with-border">
+                        <i class="fa fa-text-height"></i>
+                        <h3 class="box-title">Result summary</h3>
+                    </div>
+
+                    <!-- /.box-header -->
+                    <div class="box-body">
+
+                        <p class="lead">For predicting <span class="text-green">item 2</span> of <span
+                                class="text-green">user 2</span></p>
+
+                        <p class="text-yellow">Predicted Rating:4.5</p>
+
+                        <p class="text-red">Desc: User 2 likes item 2 very likely</p>
+
+                        <br>
+                        <p class="lead">Recommeding top-N items for <span class="text-green">user 2</span>
+                        </p>
+
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+
+                                <thead>
+                                <tr>
+                                    <th>Ranking</th>
+                                    <th>Item</th>
+                                    <th>Score</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <tr>
+                                    <td># 1</td>
+                                    <td>12</td>
+                                    <td>4.23</td>
+                                </tr>
+
+                                <tr>
+                                    <td># 2</td>
+                                    <td>2</td>
+                                    <td>4.03</td>
+                                </tr>
+
+                                <tr>
+                                    <td># 3</td>
+                                    <td>122</td>
+                                    <td>3.23</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <!-- /.box-body -->
+                </div>
+
+            </div>
+            <!--/ evaluation panel-->
+            <div style="display: none" class="col-md-6 evaluation-panel">
+
+                <!--Choose Evaluation methodology-->
+                <div class="control-group">
+                    <label>Choose Evaluation methodology</label>
+                    <div class="controls">
+                        <select class="form-control">
+                            <option>Repeated Random Sub-Sampling</option>
+                            <option>K-Fold Cross-Validation</option>
+                            <option selected>Leave-one-out</option>
+                            <option>Customised Methodology</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+
+                <!--If K-fold Cross-Validation-->
+                <div class="control-group">
+                    <label>If K-fold Cross-Validation</label>
+
+                    <div class="controls">
+                        <br>
+
+                        <div class="form-group form-group-sm row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-2 col-form-label">k:</div>
+                            <div class="col-sm-6">
+                                <input type="number" class="form-control"
+                                       placeholder="enter the number of K">
+                            </div>
+                            <div class="col-sm-2"></div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <hr>
+
+                <!--evaluation button-->
+                <div class="control-group">
+                    <br>
+                    <button type="button" class="btn btn-block btn-info btn start-evaluation">Evaluate
+                    </button>
+                </div>
+                <hr>
+
+                <div class="row text-center wait-label" style="display: none">
+                    <i class="fa fa-refresh fa-spin fa-5x"> </i></div>
+                <br>
+                <!--wait label-->
+                <!--<div class="row text-center">
+                 <i class="fa fa-refresh fa-spin fa-5x"> </i></div>-->
+                <div style="display: none" class="panel panel-default evaluation-result">
+
+                    <div class="panel-heading">
+                        <label>Evaluation Reports</label>
+
+                        <div class="input-group input-group-sm pull-right">
+                            <button type="button" class="btn btn-box-tool dropdown-toggle"
+                                    data-toggle="dropdown"
+                                    aria-expanded="true">
+                                <i class="fa fa-wrench"></i></button>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#"><i class="fa fa-save"></i> Export</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+
+                        <!--Prediction Accuracy metrics-->
+                        <div class="box no-border">
+
+                            <div class="box-header">
+                                <h3 class="box-title">Prediction Accuracy metrics</h3>
+                                <div class="box-tools">
+                                    <div class="input-group input-group-sm pull-right">
+                                        <button type="button" class="btn btn-box-tool dropdown-toggle"
+                                                data-toggle="dropdown"
+                                                aria-expanded="true">
+                                            <i class="fa fa-wrench"></i></button>
+
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#"><i class="fa fa-save"></i> Sava</a></li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- /.box-header -->
+                            <div class="box-body table-responsive no-padding">
+                                <table class="table table-hover">
+
+                                    <thead>
+                                    <tr>
+                                        <th>Matrics</th>
+                                        <th>Score</th>
+                                        <th>More Options</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+
+                                    <tr>
+                                        <td><input type="checkbox"> Accuracy <a
+                                                class="fa fa-question-circle-o"></a></td>
+                                        <td>84.5%</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-trash-o" data-toggle="tooltip"
+                                                data-placement="top" title="delete"></a>&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-search" data-toggle="tooltip"
+                                                data-placement="top" title="visualise"></a></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"> MAE <a
+                                                class="fa fa-question-circle-o"></a></td>
+                                        <td>23.2</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-trash-o" data-toggle="tooltip"
+                                                data-placement="top" title="delete"></a>&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-search" data-toggle="tooltip"
+                                                data-placement="top" title="visualise"></a></td>
+
+                                    </tr>
+
+                                    </tbody>
+
+                                    <tfoot>
+
+                                    <tr>
+
+                                        <th colspan="2">
+                                            <select class="form-control">
+                                                <option selected>MSE</option>
+                                                <option>RMSE</option>
+                                            </select>
+                                        </th>
+
+                                        <th>
+                                            <a class="btn btn-add" data-toggle="tooltip"
+                                               data-placement="top" title="add a metric">
+                                                <i class="fa fa-plus-square-o fa-2x"></i>
+                                            </a>
+                                        </th>
+                                    </tr>
+                                    </tr>
+
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+
+                        <!--Decison-support Metrics-->
+                        <div class="box no-border">
+
+                            <div class="box-header">
+                                <h3 class="box-title">Decison-support Metrics</h3>
+                                <div class="box-tools">
+                                    <div class="input-group input-group-sm" style="width: 150px;">
+                                        <button type="button" class="btn btn-box-tool dropdown-toggle"
+                                                data-toggle="dropdown"
+                                                aria-expanded="true">
+                                            <i class="fa fa-wrench"></i></button>
+
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#"><i class="fa fa-save"></i> Sava</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- /.box-header -->
+                            <div class="box-body table-responsive no-padding">
+                                <table class="table table-hover">
+
+                                    <thead>
+                                    <tr>
+                                        <th>Matrics</th>
+                                        <th>Score</th>
+                                        <th>More Options</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+
+                                    <tr>
+                                        <td><input type="checkbox"> Precison <a
+                                                class="fa fa-question-circle-o"></a></td>
+                                        <td>84.5%</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-trash-o"></a>&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-search"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"> recall <a
+                                                class="fa fa-question-circle-o"></a></td>
+                                        <td>23.2</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-trash-o"></a>&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-search"></a></td>
+                                    </tr>
+
+                                    </tbody>
+
+                                    <tfoot>
+
+                                    <tr>
+
+                                        <th colspan="2">
+                                            <select class="form-control">
+                                                <option selected>F-metrics</option>
+                                                <option>ROC</option>
+                                                <option>P@n & R@n</option>
+
+                                            </select>
+                                        </th>
+
+                                        <th>
+                                            <a class="btn btn-add" data-toggle="tooltip"
+                                               data-placement="top" title="add a metric">
+                                                <i class="fa fa-plus-square-o fa-2x"></i>
+                                            </a>
+                                        </th>
+                                    </tr>
+                                    </tr>
+
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+
+                        <!--Rank-Aware Top-N Metrics-->
+                        <div class="box no-border">
+
+                            <div class="box-header">
+                                <h3 class="box-title">Rank-Aware Top-N Metrics</h3>
+                                <div class="box-tools">
+                                    <div class="input-group input-group-sm" style="width: 150px;">
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#"><i class="fa fa-save"></i> Sava</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- /.box-header -->
+                            <div class="box-body table-responsive no-padding">
+                                <table class="table table-hover">
+
+                                    <thead>
+                                    <tr>
+                                        <th>Matrics</th>
+                                        <th>Score</th>
+                                        <th>More Options</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+
+                                    <tr>
+                                        <td><input type="checkbox"> MMR <a
+                                                class="fa fa-question-circle-o"></a></td>
+                                        <td>84.5%</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-trash-o"></a>&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-search"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"> AP <a
+                                                class="fa fa-question-circle-o"></a></td>
+                                        <td>23.2</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-trash-o"></a>&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-search"></a></td>
+                                    </tr>
+
+                                    </tbody>
+
+                                    <tfoot>
+
+                                    <tr>
+
+                                        <th colspan="2">
+                                            <select class="form-control">
+                                                <option selected>Spearman Correlation</option>
+                                                <option>MAP</option>
+                                                <option>DCG</option>
+                                                <option>nDCG</option>
+
+                                            </select>
+                                        </th>
+
+                                        <th>
+                                            <a class="btn btn-add" data-toggle="tooltip"
+                                               data-placement="top" title="add a metric">
+                                                <i class="fa fa-plus-square-o fa-2x"></i>
+                                            </a>
+                                        </th>
+                                    </tr>
+                                    </tr>
+
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+
+                        <!--beyond accuracy metrics-->
+                        <div class="box no-border">
+
+                            <div class="box-header">
+                                <h3 class="box-title">Beyond accuracy metrics</h3>
+                                <div class="box-tools">
+                                    <div class="input-group input-group-sm" style="width: 150px;">
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#"><i class="fa fa-save"></i> Sava</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- /.box-header -->
+                            <div class="box-body table-responsive no-padding">
+                                <table class="table table-hover">
+
+                                    <thead>
+                                    <tr>
+                                        <th>Matrics</th>
+                                        <th>Score</th>
+                                        <th>More Options</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+
+                                    <tr>
+                                        <td><input type="checkbox"> Coverage <a
+                                                class="fa fa-question-circle-o"></a></td>
+                                        <td>84.5%</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-trash-o"></a>&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-search"></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="checkbox"> Serendipity <a
+                                                class="fa fa-question-circle-o"></a></td>
+                                        <td>23.2</td>
+                                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-trash-o"></a>&nbsp;&nbsp;&nbsp;<a
+                                                class="fa fa-search"></a></td>
+                                    </tr>
+
+                                    </tbody>
+
+                                    <tfoot>
+
+                                    <tr>
+
+                                        <th colspan="2">
+                                            <select class="form-control">
+                                                <option selected>Novelty</option>
+                                                <option>Diversity</option>
+                                                <option>Relevance</option>
+                                            </select>
+                                        </th>
+                                        <th>
+                                            <a class="btn btn-add" data-toggle="tooltip"
+                                               data-placement="top" title="add a metric">
+                                                <i class="fa fa-plus-square-o fa-2x"></i>
+                                            </a>
+                                        </th>
+                                    </tr>
+                                    </tr>
+
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- /.box-body -->
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-8">
+
+                                <p>
+                                    <span class="label label-danger">Precison</span>
+                                    <span class="label label-success">MAE</span>
+                                    <span class="label label-info">MMR</span>
+                                    <span class="label label-warning">Coverage</span>
+                                    <span class="label label-primary">Spearman Correlation</span>
+                                </p>
+
+                            </div>
+
+                            <div class="col-ml-4"><a class="btn btn-default fa fa-area-chart">
+                                Visulatise</a></div>
+
+                        </div>
+
+
+                    </div>
+
+                    <!--/panel-body-->
+                </div>
+
+            </div>
+            <!--/col-span-6-->
+        </div>
+
+    </div>
+
+    <div class="box-footer" style="">
+        <div data-toggle="tooltip" data-placement="top" title="New a evaluation test case">
+
+            <a class="btn btn-default btn-block btn-sm" data-toggle="modal"
+               href="#addWidgetModal">
+                <i class="fa fa-plus"></i> Add
+            </a>
+
+        </div>
+    </div>
+    <!-- /.box-footer-->
+</div>
+
+
+<footer class="text-center">This is a platform for evaluating mainstream recommender system via offline<a
+        href="http://123.207.171.254"><strong> My Server</strong></a></footer>
+
+<div class="modal" id="addWidgetModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Add Test Case</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="testcasename">Test case name: </label>
+                    <input type="email" class="form-control" id="testcasename"
+                           placeholder="give a name to the test case">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+
+                <a id="closemodal" data-dismiss="modal" class="btn">Close</a>
+
+                <a id="addtestcase" class="btn btn-primary">Add</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="../../static/asserts/jquery.min.js"></script>
+<script src="../../static/asserts/bootstrap.min.js"></script>
+<script src="../../static/asserts/js/scripts.js"></script>
+<script src="../../static/asserts/adminlte.min.js"></script>
+<script src="../../static/asserts/plugins/layui/layui.js"></script>
+
+<!--<script src="../../static/asserts/plugins/datatables/jquery.dataTables.min.js"></script>-->
+<!--<script src="../../static/asserts/plugins/datatables/dataTables.bootstrap.min.js"></script>-->
+
+
+<script>
+
+
+    //    alert($(".fluid2").attr("ng-controller"));
+
+
+    //    <div ng-include="'testcase.html'"></div>
+
+
+    layui.use('layer', function () {
+
+
+        var layer = layui.layer;
+
+        $(".nav-header").click(function () {
+
+            var ele = $(this).find(".nav-header-label");
+            if (ele.hasClass("fa-chevron-down")) {
+                ele.removeClass("fa-chevron-down").addClass("fa-chevron-right");
+            } else {
+                ele.removeClass("fa-chevron-right").addClass("fa-chevron-down");
+            }
+        });
+
+
+        $("#import").click(function () {
+            $("input[name='importfile']").trigger('click');
+        });
+
+
+        $("#addtestcase").click(function () {
+
+            var testcasename = $("#testcasename").val().trim();
+
+            if (testcasename == "") {
+                layer.msg('enter the title !', {icon: 2, anim: 6, time: 1000});
+                return false;
+            }
+
+
+            $("#closemodal").trigger('click');
+
+            var testcasebox = $("#testcaseboxlast").next().clone(true);
+
+            testcasebox.find(".testcase-title").text(testcasename);
+            testcasebox.attr('id', testcasename);
+
+            $("#topline").after(testcasebox);
+            testcasebox.show('slow');
+
+//            $("#topline").after("<div ng-include=\"\\'testcase.html\\'\"></div>");
+
+
+        });
+
+        $("input[name='importfile']").change(function () {
+            console.log($(this)[0].files[0]);
+        });
+
+        $("input[name='algmethod']").click(function () {
+            $(this).parent().parent().parent().siblings('.algmethod').text($(this).val());
+        });
+
+
+        $(".recommend").click(function () {
+
+
+            var algmethod = $(this).parent().parent().siblings('.algmethod').text();
+
+            if (algmethod === "") {
+                layer.msg('select an algorithm!', {icon: 2, anim: 6, time: 1000});
+                return false;
+            }
+
+            $(this).parent().parent().parent().parent().parent().parent().parent().find('.recommender-panel').toggle('slow');
+
+
+            var ele = $(this).find("i");
+            if (ele.hasClass("fa-chevron-down")) {
+                ele.removeClass("fa-chevron-down").addClass("fa-chevron-right");
+            } else {
+                ele.removeClass("fa-chevron-right").addClass("fa-chevron-down");
+            }
+
+        });
+
+        $(".evaluate").click(function () {
+
+            var algmethod = $(this).parent().parent().siblings('.algmethod').text();
+
+            if (algmethod === "") {
+                layer.msg('select an algorithm!', {icon: 2, anim: 6, time: 1000});
+                return false;
+            }
+
+            $(this).parent().parent().parent().parent().parent().parent().parent().find('.evaluation-panel').toggle('slow');
+
+            var ele = $(this).find("i");
+            if (ele.hasClass("fa-chevron-down")) {
+                ele.removeClass("fa-chevron-down").addClass("fa-chevron-right");
+            } else {
+                ele.removeClass("fa-chevron-right").addClass("fa-chevron-down");
+            }
+        });
+
+
+        $(".start-recommend").click(function () {
+            var ele = $(this).parent();
+            ele.siblings(".wait-label").show();
+
+            setTimeout(function () {
+                ele.siblings('.recommend-result').toggle('slow');
+                ele.siblings(".wait-label").hide();
+            }, 1000);
+
+
+        });
+
+        $(".start-evaluation").click(function () {
+
+            var evalmethod = $(this).parent().siblings(".evalmethod").children("select").val();
+
+            if (evalmethod != "K-Fold Cross-Validation") {
+                layer.msg('only K-Fold Cross-Validation available now', {icon: 2, anim: 6, time: 1000});
+                return false;
+            }
+
+            var ele = $(this).parent();
+            ele.siblings(".wait-label").show();
+
+
+            var url = "checkJSON";
+            var args = {'name':'congcong'};
+            $.post(url, args, function(data){
+                console.log(data);
+
+                ele.siblings('.evaluation-result').toggle('slow');
+                ele.siblings(".wait-label").hide();
+
+
+            });
+
+
+//            setTimeout(function () {
+//                ele.siblings('.evaluation-result').toggle('slow');
+//                ele.siblings(".wait-label").hide();
+//            }, 1000);
+
+
+        });
+
+//        $("body").on('click',".fa-minus",function () {
+//
+//            alert('sassa');
+//            $(this).parent().parent().parent().next("box-body").hide(1000);
+//            $(this).parent().parent().next("box-footer").hide(1000);
+//
+//        });
+
+
+        $(".collapseBtn").click(function () {
+            $(this).parent().parent().next().toggle(1000);
+        });
+
+        $(".removeBtn").click(function () {
+            $(this).parent().parent().parent().hide(1000);
+        });
+
+
+
+        $('[data-toggle="tooltip"]').tooltip();
+
+        $("#usertable").dataTable({
+            "paging": false,
+            "lengthChange": false,
+            "searching": true,
+            "ordering": true,
+            "info": true,
+            "autoWidth": false
+        });
+    });
+</script>
+
+</body>
+</html>

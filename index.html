@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>index</title>
+</head>
+<body>
+
+<a href="page1">go to page 1</a>
+<br><br>
+<a id="checkJSON" href="">check JSON</a>
+<br><br>
+<a href="checkHibernate">check Hibernate</a>
+
+
+</body>
+
+<script src="WEB-INF/static/asserts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+
+        $("#checkJSON").click(function () {
+            $.ajax({
+                type: "POST",
+                url: "checkJSON",
+                data: {'testData': 'wangcongcong'},
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+                    alert('success');
+                },
+                error: function (xhr, type) {
+                    alert("error!");
+                }
+            });
+        });
+
+</script>
+
+</html>

@@ -1,0 +1,47 @@
+18/02/06 00:16:32 INFO DispatcherServlet: FrameworkServlet 'mvc-dispatcher': initialization started
+18/02/06 00:16:32 INFO XmlWebApplicationContext: Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Tue Feb 06 00:16:32 GMT 2018]; root of context hierarchy
+18/02/06 00:16:32 INFO XmlBeanDefinitionReader: Loading XML bean definitions from file [/Library/apache-tomcat-8.0.48/webapps/librec-core/WEB-INF/classes/spring/spring-service.xml]
+18/02/06 00:16:32 INFO XmlBeanDefinitionReader: Loading XML bean definitions from file [/Library/apache-tomcat-8.0.48/webapps/librec-core/WEB-INF/classes/spring/spring-web.xml]
+18/02/06 00:16:33 INFO XmlBeanDefinitionReader: Loading XML bean definitions from file [/Library/apache-tomcat-8.0.48/webapps/librec-core/WEB-INF/classes/spring/spring-dao.xml]
+18/02/06 00:16:33 INFO PropertySourcesPlaceholderConfigurer: Loading properties file from class path resource [jdbc.properties]
+18/02/06 00:16:33 INFO MLog: MLog clients using log4j logging.
+18/02/06 00:16:34 INFO C3P0Registry: Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+18/02/06 00:16:34 WARN ActiveManagementCoordinator: A C3P0Registry mbean is already registered. This probably means that an application using c3p0 was undeployed, but not all PooledDataSources were closed prior to undeployment. This may lead to resource leaks over time. Please take care to close all PooledDataSources.
+18/02/06 00:16:35 INFO RequestMappingHandlerMapping: Mapped "{[/evaluate],methods=[POST],produces=[application/json;charset=utf-8]}" onto public com.congcong.ucd.dto.Result<java.util.HashMap<java.lang.String, java.lang.Double>> com.congcong.ucd.controllers.IndexController.evaluate(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpSession) throws net.librec.common.LibrecException,java.lang.ClassNotFoundException,java.io.IOException
+18/02/06 00:16:35 INFO RequestMappingHandlerMapping: Mapped "{[/{id}/detail],methods=[GET],produces=[application/json;charset=utf-8]}" onto private com.congcong.ucd.dto.Result<java.util.List<com.congcong.ucd.entities.SessionTable>> com.congcong.ucd.controllers.IndexController.detail(int,org.springframework.ui.Model)
+18/02/06 00:16:35 INFO RequestMappingHandlerMapping: Mapped "{[/checkJSON]}" onto public java.util.Collection<com.congcong.ucd.entities.SessionTable> com.congcong.ucd.controllers.IndexController.checkJSON()
+18/02/06 00:16:35 INFO RequestMappingHandlerMapping: Mapped "{[/download]}" onto public org.springframework.http.ResponseEntity<byte[]> com.congcong.ucd.controllers.IndexController.download(java.lang.String,org.springframework.web.servlet.ModelAndView,javax.servlet.http.HttpSession) throws java.io.IOException
+18/02/06 00:16:35 INFO RequestMappingHandlerMapping: Mapped "{[/getBasicMetrics],methods=[POST],produces=[application/json;charset=utf-8]}" onto public com.congcong.ucd.dto.Result<java.util.HashMap<java.lang.String, java.lang.Double>> com.congcong.ucd.controllers.IndexController.getBasicMetrics(java.lang.String,java.lang.String,java.lang.String) throws net.librec.common.LibrecException
+18/02/06 00:16:35 INFO RequestMappingHandlerMapping: Mapped "{[/testFileUpload],methods=[POST]}" onto public java.lang.String com.congcong.ucd.controllers.IndexController.testFileUpload(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.ModelAndView,javax.servlet.http.HttpSession)
+18/02/06 00:16:35 INFO RequestMappingHandlerMapping: Mapped "{[/mainWithSession],methods=[POST]}" onto public java.lang.String com.congcong.ucd.controllers.IndexController.mainWithSessionPage(java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model)
+18/02/06 00:16:35 INFO RequestMappingHandlerMapping: Mapped "{[/asaguest]}" onto public java.lang.String com.congcong.ucd.controllers.IndexController.asAGuest(javax.servlet.http.HttpSession)
+18/02/06 00:16:35 INFO RequestMappingHandlerMapping: Mapped "{[/main]}" onto public org.springframework.web.servlet.ModelAndView com.congcong.ucd.controllers.IndexController.mainPage(org.springframework.web.servlet.ModelAndView,javax.servlet.http.HttpSession)
+18/02/06 00:16:35 INFO RequestMappingHandlerMapping: Mapped "{[/entrance]}" onto public java.lang.String com.congcong.ucd.controllers.IndexController.entrance()
+18/02/06 00:16:35 INFO RequestMappingHandlerMapping: Mapped "{[/page1]}" onto public java.lang.String com.congcong.ucd.controllers.IndexController.page1()
+18/02/06 00:16:35 INFO RequestMappingHandlerAdapter: Looking for @ControllerAdvice: WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Tue Feb 06 00:16:32 GMT 2018]; root of context hierarchy
+18/02/06 00:16:35 INFO RequestMappingHandlerAdapter: Looking for @ControllerAdvice: WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Tue Feb 06 00:16:32 GMT 2018]; root of context hierarchy
+18/02/06 00:16:36 INFO SimpleUrlHandlerMapping: Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+18/02/06 00:16:36 INFO DispatcherServlet: FrameworkServlet 'mvc-dispatcher': initialization completed in 4184 ms
+18/02/06 00:16:39 INFO TextDataConvertor: Dataset: ...s/librec-core/data/filmtrust/rating
+18/02/06 00:16:39 INFO TextDataConvertor: All dataset files [/Library/apache-tomcat-8.0.48/webapps/librec-core/data/filmtrust/rating/ratings_1.txt, /Library/apache-tomcat-8.0.48/webapps/librec-core/data/filmtrust/rating/ratings_0.txt, /Library/apache-tomcat-8.0.48/webapps/librec-core/data/filmtrust/rating/ratings_2.txt, /Library/apache-tomcat-8.0.48/webapps/librec-core/data/filmtrust/rating/ratings_3.txt]
+18/02/06 00:16:39 INFO TextDataConvertor: All dataset files size 411942
+18/02/06 00:16:39 INFO TextDataConvertor: Now loading dataset file ratings_1
+18/02/06 00:16:40 INFO TextDataConvertor: Now loading dataset file ratings_0
+18/02/06 00:16:40 INFO TextDataConvertor: Now loading dataset file ratings_2
+18/02/06 00:16:40 INFO TextDataConvertor: Now loading dataset file ratings_3
+18/02/06 00:16:40 INFO TextDataModel: Transform data to Convertor successfully!
+18/02/06 00:16:40 INFO TextDataModel: Split data to train Set and test Set successfully!
+18/02/06 00:16:40 INFO TextDataModel: Data size of training is 28408
+18/02/06 00:16:40 INFO TextDataModel: Data size of testing is 7086
+18/02/06 00:16:43 INFO UserKNNRecommender: Job Setup completed.
+18/02/06 00:16:43 INFO UserKNNRecommender: Job Train completed.
+18/02/06 00:17:30 INFO UserKNNRecommender: Job End.
+18/02/06 00:17:30 INFO RecommenderJob: Evaluator value:Entropy top 10 is 20.87193625854661
+18/02/06 00:17:30 INFO RecommenderJob: Evaluator value:AUC top 10 is 0.9140525592045369
+18/02/06 00:17:30 INFO RecommenderJob: Evaluator value:AP top 10 is 0.443562361473505
+18/02/06 00:17:30 INFO RecommenderJob: Evaluator value:PRECISION top 10 is 0.3440919904837437
+18/02/06 00:17:30 INFO RecommenderJob: Evaluator value:RECALL top 10 is 0.6066775556064167
+18/02/06 00:17:30 INFO RecommenderJob: Evaluator value:Novelty top 10 is 13.867685365361526
+18/02/06 00:17:30 INFO RecommenderJob: Evaluator value:NDCG top 10 is 0.5381883205059524
+18/02/06 00:17:30 INFO RecommenderJob: Evaluator value:RR top 10 is 0.60019007338595
+18/02/06 00:17:30 INFO RecommenderJob: Result path is /Library/apache-tomcat-8.0.48/webapps/librec-core/result/filmtrust/rating-userknn-output/userknn
