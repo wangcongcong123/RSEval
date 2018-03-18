@@ -14,8 +14,7 @@ You need to the following setups before running it
 After the setups, go to browser and enter: http://localhost:8080/librec-core/main
 
 You will find the running application like this
-
-
+![Alt text](page.png?raw=true "Title")
 
 Using the applicaiton, below is an example of performance comapre and contrast between three recommendation algorithms.
-
+![Alt text](example.png?raw=true "Title")
