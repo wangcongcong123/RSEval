@@ -1,6 +1,6 @@
 # RSEval
 
-This is a web application for comprehensive offline evaluating recommender systems, based on LibRec.
+This is a web application for comprehensive offline evaluating recommender systems, based on [LibRec](https://www.librec.net/).
 
 The is a javaSpringMVC + Mybatis based project.
 
